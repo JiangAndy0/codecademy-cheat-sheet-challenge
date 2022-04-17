@@ -1,0 +1,46 @@
+html {
+    background-color: burlywood;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    text-align: center;
+    color: white;
+    background-color: darkgoldenrod;
+    margin: 20px;
+    font-size: 20px;
+}
+
+#title-position {
+    padding: 3px;
+    position: relative;
+    top: -1px;
+}
+
+table {
+    background-color: burlywood;
+    margin: 20px;
+    border: 3px solid darkgoldenrod;
+}
+
+thead {
+    background-color: burlywood;
+    color: white;
+}
+
+td {
+    padding: 0 15px;
+    border: 2px solid darkgoldenrod; 
+}
+
+tbody td {
+    background-color: bisque;
+}
+
+span, .code {
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: white;
+    color: black;
+}
