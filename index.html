@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./Resources/styles.css" rel="stylesheet";
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <title>CSS Positioning</title>
+</head>
+<body>
+    <header>
+        <h1>CSS <span id="title-position">position</span> Values</h1>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    <h2>Value<h2>
+                </td>
+                <td>
+                    <h2>Description</h2>
+                </td>
+                <td>
+                    <h2>Use Cases</h2>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p class="code">static</p>
+                </td>
+                <td>
+                    <p>Default position value. Elements will follow the normal flow of the document. The <span>top</span>, <span>right</span>, <span>bottom</span>, <span>left</span> and <span>z-index</span> properties have no effect.</p>
+                </td>
+                <td>
+                    <p>Regular elements that don't need any special positioning.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="code">relative</p>
+                </td>
+                <td>
+                    <p>Element follows the normal flow of the document but offset according to the <span>top</span>, <span>right</span>, <span>bottom</span>, and <span>left</span> properties. Other elements will position themselves as if this element was not offset.</p>
+                </td>
+                <td>
+                    <p>Elements that "pop" out when you hover over them.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="code">absolute</p>
+                </td>
+                <td>
+                    <p>Element does not follow the flow of the document, and is positioned relative to its closest positioned ancestor if available; otherwise, it is placed relative to the initial containing block. The <span>top</span>, <span>right</span>, <span>bottom</span>, and <span>left</span> properties can be used to offset the element.</p>
+                </td>
+                <td>
+                    <p>Placing elements whereever you want in a page and overlapping elements.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="code">fixed</p>
+                </td>
+                <td>
+                    <p>Element does not follow the flow of the document and is positioned relative to the initial containing block. Stays in the same place in the viewport as you scroll. It is fixed based on the <span>top</span>, <span>right</span>, <span>bottom</span>, and <span>left</span> properties.</p>
+                </td>
+                <td>
+                    <p>Headers or navigation bars that you want to stay visible as you scroll the page.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="code">sticky</p>
+                </td>
+                <td>
+                    <p>Element is relatively positioned and follows the flow of the document until a threshold is hit. This threshold is specified using the <span>top</span>, <span>right</span>, <span>bottom</span>, and <span>left</span> properties. After the threshold is hit, the element is fixed in the viewport until it reaches the boundary of its parent.</p>
+                </td>
+                <td>
+                    <p>Headings in an alphabetical list.</p>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
